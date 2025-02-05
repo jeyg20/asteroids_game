@@ -11,7 +11,9 @@ def main():
     print(f"Screen hidth: {constants.SCREEN_HEIGHT}")
     pygame.init()
 
-    screen = pygame.display.set_mode((constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT))
+    screen = pygame.display.set_mode(
+        (constants.SCREEN_WIDTH, constants.SCREEN_HEIGHT)
+    )
     clock = pygame.time.Clock()
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
